@@ -29,17 +29,17 @@ Actions.prototype.init = function () {
   this.addAction('new...', function () {
     window.open(ui.getUrl());
   });
-   //this.addAction('open...', function () {
-     //window.openNew = true;
+   this.addAction('open...', function () {
+     window.openNew = true;
   
-     //window.openKey = 'open';
+     window.openKey = 'open';
 
-     //window.editorUi = ui;
+     window.editorUi = ui;
 
-     //ui.openFile();
-   //});
+     ui.openFile();
+   });
   this.addAction('import...', function () {
-    window.openNew = false;
+    window.openNew = true;
     window.openKey = 'import';
 
     // Closes dialog after open
